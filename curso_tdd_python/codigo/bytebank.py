@@ -32,9 +32,12 @@ class Funcionario:
             valor = 0
         return valor
     
-    def decrescimo_salario(self):
+    def _eh_socio(self):
         sobrenomes = ['Narukami', 'Hanamura', 'Amagi', 'Satonaka', 'Fijos']
-        if (self._salario >= 100000) and (self.sobrenome() in sobrenomes):
+        return (self._salario >= 100000) and (self.sobrenome() in sobrenomes)
+    
+    def decrescimo_salario(self):
+        if self._eh_socio():
             decrescimo = self._salario * 0.1
             self._salario -= decrescimo
         return self._salario
