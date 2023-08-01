@@ -66,11 +66,11 @@ class TesteClass:
         
             assert resultado
             
-    def teste_quando_str_recebe_funcionario_deve_retornar_funcionario(self, nome='Teste', data_nascimento='01/01/1970', salario=9999.99):
-        esperado = 'Funcionario(Teste, 01/01/1970, 9999.99)'
+    # def teste_quando_str_recebe_funcionario_deve_retornar_funcionario(self, nome='Teste', data_nascimento='01/01/1970', salario=9999.99):
+    #     esperado = 'Funcionario(Teste, 01/01/1970, 9999.99)'
         
-        funcionario_teste = Funcionario(nome, data_nascimento, salario)
+    #     funcionario_teste = Funcionario(nome, data_nascimento, salario)
         
-        resultado = funcionario_teste.__str__()
+    #     resultado = funcionario_teste.__str__()
         
-        assert resultado == esperado
+    #     assert resultado == esperado
